@@ -1,0 +1,42 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 19px 0;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 5;
+
+  &__logo {
+    border-right: 2px solid #E35191;
+    padding-right: 15px;
+    line-height: 1;
+    text-align: center;
+
+    a {
+      display: block;
+      max-width: 200px;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 13px;
+      color: #7E8088;
+      margin-top: 5px;
+    }
+  }
+
+  &__slogan {
+    font-size: 18px;
+  }
+
+  &__phone {
+    font-size: 22px;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}

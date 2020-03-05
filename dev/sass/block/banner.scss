@@ -1,0 +1,21 @@
+.banner {
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__content {
+    position: relative;
+    height: 642px;
+    padding-top: 160px;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  &__sticker {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    width: 220px;
+  }
+}

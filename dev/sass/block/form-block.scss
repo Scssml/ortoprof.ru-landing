@@ -1,0 +1,16 @@
+.form-block {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+
+  &__img {
+    margin: -75px 0 -78px -30px;
+  }
+
+  .info-block-vertical {
+    border-radius: 5px 0 0 5px;
+  }
+
+  &__form {
+    padding: 42px 0;
+  } 
+}

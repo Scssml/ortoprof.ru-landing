@@ -1,0 +1,33 @@
+.bg {
+  
+  &-gray {
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F6F5F1 100%);
+  }
+
+  &-brown {
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #EADBC6 100%);
+  }
+
+  &-about {
+    background-image: url(../img/bg-about.svg);
+    background-position: calc(50% - 230px) -162px;
+    background-repeat: no-repeat;
+  }
+
+  &-form {
+    position: relative;
+  
+    &:after {
+      content: '';
+      position: absolute;
+      width: 110px;
+      height: 151px;
+      background-image: url(../img/bg-form.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      bottom: 60px;
+      right: 0;
+    }
+  }
+}

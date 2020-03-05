@@ -1,0 +1,27 @@
+.info-block {
+  display: flex;
+  align-items: center;
+  width: 380px;
+  padding: 26px 15px;
+  background: rgba(246, 244, 241, 0.5);
+  border: 1px dashed rgba(227, 81, 145, 0.7);
+  line-height: 1.2;
+
+  &__img {
+    width: 114px;
+    flex-shrink: 0;
+    margin-right: 15px;
+  }
+
+  &__text {
+    font-size: 15px;
+    color: #7E8088;
+    width: 100%;
+  }
+
+  &__heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+  }
+}

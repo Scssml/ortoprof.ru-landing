@@ -1,0 +1,29 @@
+.btn {
+  display: inline-flex;
+  height: 54px;
+  background-color: #E35191;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFF;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  border-radius: 30px;
+  min-width: 168px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color .25s ease-in-out;
+  border: none;
+
+  &--small {
+    height: 38px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #CD6291;
+  }
+}

@@ -1,0 +1,17 @@
+.sticker-block {
+  display: inline-flex;
+  align-items: center;
+
+  &__img {
+    display: inline-block;
+    width: 40px;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+  }
+}

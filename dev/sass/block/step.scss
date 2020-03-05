@@ -1,0 +1,46 @@
+.step {
+  line-height: 1.2;
+
+  &__img {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-right: auto;
+    height: 96px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-image: url(../img/ico-arrow-step.svg);
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: cover;
+      width: 120px;
+      height: 16px;
+      top: calc(50% - 8px);
+      right: -130px;
+    }
+
+    &--no-arrow {
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &__number {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background: #E35191;
+    text-align: center;
+    line-height: 16px;
+    font-size: 12px;
+    border-radius: 50%;
+    color: #fff;
+  }
+}

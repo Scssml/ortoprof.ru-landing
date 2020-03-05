@@ -1,0 +1,14 @@
+.info-block-vertical {
+  color: #7E8088;
+  line-height: 1.2;
+  text-align: center;
+  background: #fff;
+  padding: 30px 15px;
+  max-width: 308px;
+
+  &__heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+}
