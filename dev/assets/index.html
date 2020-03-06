@@ -11,8 +11,8 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-auto col-md-7 col-xl-6">
             <div class="row align-items-center">
               <div class="col-auto pr-0">
                 <div class="header__logo">
@@ -26,13 +26,13 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <div class="row align-items-center justify-content-end">
+          <div class="col-md-5 col-xl-6 mt-1 mt-md-0">
+            <div class="row align-items-center justify-content-center justify-content-md-end">
               <div class="col-auto">
                 <a href="tel:+78462427171" class="header__phone">8 (846) 242-71-71</a>
               </div>
-              <div class="col-auto">
-                <a href="" class="btn btn--small">Заказать звонок</a>
+              <div class="col-auto d-none d-md-block">
+                <a href="#callback" class="btn btn--small fancybox">Заказать звонок</a>
               </div>
             </div>
           </div>
@@ -44,13 +44,13 @@
       <div class="container">
         <div class="banner__content">
           <div class="row text-center justify-content-between">
-            <div class="col-lg-4">
+            <div class="col-lg-auto col-xl-4">
               Брекет-система
-              <br><a href="#" class="btn px-4">ЗАПИСАТЬСЯ НА ПРИЕМ</a>
+              <br><a href="#callback" class="btn px-4 fancybox">ЗАПИСАТЬСЯ НА ПРИЕМ</a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-auto col-xl-4">
               3D Smile
-              <br><a href="#" class="btn px-4">ЗАПИСАТЬСЯ НА ПРИЕМ</a>
+              <br><a href="#callback" class="btn px-4 fancybox">ЗАПИСАТЬСЯ НА ПРИЕМ</a>
             </div>
           </div>
           <div class="banner__sticker sticker-block">
@@ -68,7 +68,7 @@
     <section class="py-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-auto">
+          <div class="col-lg-auto mb-5 mb-lg-0">
             <div class="info-block">
               <div class="info-block__img">
                 <img src="img/gift-small.png" alt="gift">
@@ -82,7 +82,7 @@
 
           <div class="col-lg">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-sm-4 mb-4 mb-sm-0">
                 <div class="card">
                   <div class="card__img">
                     <img src="img/img-1.jpg" alt="card">
@@ -90,7 +90,7 @@
                   Эстетические
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-sm-4 mb-4 mb-sm-0">
                 <div class="card">
                   <div class="card__img">
                     <img src="img/img-2.jpg" alt="card">
@@ -98,7 +98,7 @@
                   Металлические
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-sm-4 mb-4 mb-sm-0">
                 <div class="card">
                   <div class="card__img">
                     <img src="img/img-3.jpg" alt="card">
@@ -115,8 +115,8 @@
     <section class="py-5 bg-gray">
       <div class="container">
         <h2 class="heading text-center mb-5">Как проходит лечение</h2>
-        <div class="row">
-          <div class="col-lg">
+        <div class="row block-scroll">
+          <div class="col-auto">
             <div class="step">
               <div class="step__img">
                 <span class="step__number">1</span>
@@ -125,7 +125,7 @@
               <div>Обследование</div>
             </div>
           </div>
-          <div class="col-lg">
+          <div class="col-auto">
             <div class="step">
               <div class="step__img">
                 <span class="step__number">2</span>
@@ -134,7 +134,7 @@
               <div>Решение<br>о методе лечения</div>
             </div>
           </div>
-          <div class="col-lg">
+          <div class="col-auto">
             <div class="step">
               <div class="step__img">
                 <span class="step__number">3</span>
@@ -143,7 +143,7 @@
               <div>Установка<br>аппаратуры</div>
             </div>
           </div>
-          <div class="col-lg">
+          <div class="col-auto">
             <div class="step">
               <div class="step__img">
                 <span class="step__number">4</span>
@@ -152,8 +152,8 @@
               <div>Наблюдение<br>во время лечения</div>
             </div>
           </div>
-          <div class="col-lg-auto">
-            <div class="step">
+          <div class="col-auto">
+            <div class="step step--small">
               <div class="step__img step__img--no-arrow">
                 <span class="step__number">5</span>
                 <img src="img/step-5.png" alt="step">
@@ -196,7 +196,7 @@
         <h2 class="heading text-center mb-3">Остались вопросы?</h2>
         <div class="form-block mb-4">
           <div class="row">
-            <div class="col-lg-auto">
+            <div class="col-lg-auto mb-5 mb-lg-0">
               <div class="info-block-vertical">
                 <img src="img/gift.jpg" alt="gift">
                 <p class="info-block-vertical__heading">Устная консультация ортодонта в подарок</p>
@@ -210,23 +210,23 @@
                     <label for="fields[name]">Ваше имя</label>
                     <input type="text" class="form__input" name="fields[name]" id="fields[name]" placeholder="Введите имя">
                   </div>
-                  <div class="col-12 mb-5">
+                  <div class="col-12 mb-4 mb-md-5">
                     <label for="fields[phone]">Ваш телефон *</label>
                     <input type="tel" class="form__input" name="fields[phone]" id="fields[phone]" placeholder="+7 (___) ___-__-__" required>
                   </div>
-                  <div class="col-lg pr-2">
-                    <input type="checkbox" class="form__checkbox" name="fields[consent]">
+                  <div class="col-md-7 col-lg pr-lg-2 mb-4 mb-md-0">
+                    <input type="checkbox" class="form__checkbox" name="fields[consent]" id="fields[consent]">
                     <label for="fields[consent]">
                       <span>Принимаю условия <a href="#">пользовательского соглашения</a></span>
                     </label>
                   </div>
-                  <div class="col-lg-auto pl-0 text-right">
+                  <div class="col-md-5 col-lg-auto pl-lg-0 text-center text-md-right">
                     <input type="submit" class="btn form__btn" value="ЗАКАЗАТЬ ЗВОНОК">
                   </div>
                 </div>
               </form>
             </div>
-            <div class="col-lg-auto pl-0">
+            <div class="col-lg-auto pl-0 d-none d-xl-block">
               <div class="form-block__img">
                 <img src="img/doctor.png" alt="doctor">
               </div>
@@ -235,6 +235,153 @@
         </div>
       </div>
     </section>
+
+    <section class="py-5 bg-faq">
+      <div class="container">
+        <h2 class="heading text-center mb-3">Вопросы и ответы</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-9">
+            <div class="dropdown-block">
+              <a href="#" class="dropdown-block__link">Сколько стоит?</a>
+              <div class="dropdown-block__text">
+                Оптимальный возраст - 12 лет. Однако, по показаниям иногда ортодонтическое лечение начинают и раньше.
+                Оптимальный возраст - 12 лет. Однако, по показаниям иногда ортодонтическое лечение начинают и раньше.
+                Оптимальный возраст - 12 лет. Однако, по показаниям иногда ортодонтическое лечение начинают и раньше.
+                Оптимальный возраст - 12 лет. Однако, по показаниям иногда ортодонтическое лечение начинают и раньше.
+              </div>
+            </div>
+            <div class="dropdown-block">
+              <a href="#" class="dropdown-block__link">В каком возрасте ставить?</a>
+              <div class="dropdown-block__text">
+                Оптимальный возраст - 12 лет. Однако, по показаниям иногда ортодонтическое лечение начинают и раньше.
+              </div>
+            </div>
+            <div class="dropdown-block">
+              <a href="#" class="dropdown-block__link">Какая нужна подготовка перед исправлением прикуса?</a>
+              <div class="dropdown-block__text">
+                Оптимальный возраст - 12 лет. Однако, по показаниям иногда ортодонтическое лечение начинают и раньше.
+              </div>
+            </div>
+            <div class="dropdown-block">
+              <a href="#" class="dropdown-block__link">Какие бывают брекеты?</a>
+              <div class="dropdown-block__text">
+                Оптимальный возраст - 12 лет. Однако, по показаниям иногда ортодонтическое лечение начинают и раньше.
+              </div>
+            </div>
+            <div class="dropdown-block">
+              <a href="#" class="dropdown-block__link">Как долго надо ходить в брекетах?</a>
+              <div class="dropdown-block__text">
+                Оптимальный возраст - 12 лет. Однако, по показаниям иногда ортодонтическое лечение начинают и раньше.
+              </div>
+            </div>
+            <p>Есть противопоказания. Посоветуйтесь с врачом. Наши специалисты будут рады ответить на все ваши вопросы по телефону.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="position-relative">
+      <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6c5c8e220012ed4e3ce5899450482f54a13039c0b12876afb7d540dea3acaed1&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+      </div>
+
+      <div class="container">
+        <div class="contact-block">
+          <div class="contact-block__content">
+            <h2 class="heading mb-3 color-black">Как записаться на прием?</h2>
+            <div class="row">
+              <div class="col-12 mb-3">
+                Мы работаем ежедневно, кроме воскресенья
+                <div class="sticker-block mt-2">
+                  <div class="sticker-block__img sticker-block__img--small">
+                    <img src="img/ico-clock.svg" alt="banner">
+                  </div>
+                  <div class="sticker-block__text color-black">
+                    с 8:00 до 20:00
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                Наш телефон:
+                <div class="sticker-block mt-2">
+                  <div class="sticker-block__img sticker-block__img--small">
+                    <img src="img/ico-phone.svg" alt="banner">
+                  </div>
+                  <div class="sticker-block__text color-black">
+                    <a href="tel:+78462427171">8 (846) 242-71-71</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                Адрес:
+                <div class="sticker-block mt-2">
+                  <div class="sticker-block__img sticker-block__img--small">
+                    <img src="img/ico-phone.svg" alt="banner">
+                  </div>
+                  <div class="sticker-block__text color-black">
+                    Ленинская, 206
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-sm-auto">
+            <img src="img/logo-white.png" alt="logo" class="mb-3 d-block d-lg-none">
+            <img src="img/prodoctorov.png" alt="prodoctorov">
+          </div>
+          <div class="col-sm-auto col-lg-4 text-right">
+            <p>г. Самара, ул. Ленинская 206</p>
+            <p><a href="tel:+78462427171" class="footer__phone">8 (846) 242-71-71</a></p>
+            <div class="social">
+              <a href="#" target="_blank" class="social__link socicon-vkontakte"></a>
+              <a href="#" target="_blank" class="social__link socicon-instagram"></a>
+              <a href="#" target="_blank" class="social__link socicon-odnoklassniki"></a>
+            </div>
+          </div>
+          <div class="col-lg-auto order-lg-first text-center text-lg-left mt-3 mt-lg-0">
+            <img src="img/logo-white.png" alt="logo" class="mb-4 d-none d-lg-block">
+            <p class="font-small pt-2 mb-2"><a href="#">Политика конфиденциальности</a></p>
+            <p class="font-small mb-0">©2018-2020. Стоматологическая клиника ОРТОПРОФ</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="d-none">
+      <div id="callback">
+        <div class="popup">
+          <form class="form">
+            <div class="row align-items-center">
+              <div class="col-12 mb-3">
+                <label for="fields[name]">Ваше имя</label>
+                <input type="text" class="form__input" name="fields[name]" id="fields[name]" placeholder="Введите имя">
+              </div>
+              <div class="col-12 mb-3">
+                <label for="fields[phone]">Ваш телефон *</label>
+                <input type="tel" class="form__input" name="fields[phone]" id="fields[phone]" placeholder="+7 (___) ___-__-__" required>
+              </div>
+              <div class="col-12 mb-3">
+                <input type="checkbox" class="form__checkbox" name="fields[consent]" id="fields[consent]">
+                <label for="fields[consent]">
+                  <span>Принимаю условия <a href="#">пользовательского соглашения</a></span>
+                </label>
+              </div>
+              <div class="col-lg-12 text-center">
+                <input type="submit" class="btn form__btn" value="ЗАКАЗАТЬ ЗВОНОК">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="js/libs.min.js"></script>
     <script src="js/all.min.js"></script>
   </body>

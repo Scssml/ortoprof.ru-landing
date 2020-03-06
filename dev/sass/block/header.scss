@@ -23,11 +23,30 @@
       font-size: 13px;
       color: #7E8088;
       margin-top: 5px;
+
+      @media (max-width: 575px) {
+        font-size: 9px;
+      }
+    }
+
+    @media (max-width: 575px) {
+      width: 140px;
     }
   }
 
   &__slogan {
     font-size: 18px;
+
+    @media (max-width: 991px) {
+      width: 160px;
+      display: block;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 14px;
+      width: 130px;
+      line-height: 1.2;
+    }
   }
 
   &__phone {
@@ -38,5 +57,9 @@
     &:focus {
       text-decoration: none;
     }
+  }
+
+  @media (max-width: 1199px) {
+    padding: 10px 0;
   }
 }

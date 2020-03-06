@@ -7,6 +7,14 @@
     width: 40px;
     margin-right: 8px;
     flex-shrink: 0;
+
+    &--small {
+      width: 18px;
+
+      img {
+        display: block;
+      }
+    }
   }
 
   &__text {

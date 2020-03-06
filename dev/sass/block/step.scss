@@ -1,5 +1,6 @@
 .step {
   line-height: 1.2;
+  width: 212px;
 
   &__img {
     position: relative;
@@ -42,5 +43,9 @@
     font-size: 12px;
     border-radius: 50%;
     color: #fff;
+  }
+
+  &--small {
+    width: 136px;
   }
 }

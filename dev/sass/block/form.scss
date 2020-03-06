@@ -20,10 +20,10 @@
       color: #7E8088;
       display: flex;
       line-height: 1;
+      align-items: center;
 
       &:before {
         content: '';
-        background-image: url(../img/ico-checkbox.svg);
         width: 24px;
         height: 24px;
         display: inline-block;
@@ -43,6 +43,13 @@
         &:focus {
           text-decoration: none;
         }
+      }
+    }
+
+    &:checked + label {
+
+      &:before {
+        background-image: url(../img/ico-checkbox.svg);
       }
     }
   }

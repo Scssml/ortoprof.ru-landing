@@ -22,4 +22,16 @@ a {
 .heading {
   font-weight: bold;
   font-size: 32px;
+
+  @media (max-width: 575px) {
+    font-size: 22px;
+  }
+}
+
+.color-black {
+  color: #000;
+}
+
+.font-small {
+  font-size: 14px;
 }

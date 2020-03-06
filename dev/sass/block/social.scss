@@ -1,0 +1,26 @@
+.social{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__link{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+    border-radius: 50%;
+    color: #CD6291;
+    background-color: #fff;
+    transition: color .25s ease-in-out;
+    margin-left: 10px;
+
+    &:hover,
+    &:focus{
+      text-decoration: none;
+      color: #E35191;
+    }
+  }
+}

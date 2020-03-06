@@ -11,6 +11,11 @@
     width: 114px;
     flex-shrink: 0;
     margin-right: 15px;
+
+    @media (max-width: 575px) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
   }
 
   &__text {
@@ -23,5 +28,15 @@
     font-size: 20px;
     font-weight: bold;
     color: #000;
+  }
+
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+
+  @media (max-width: 575px) {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
   }
 }
