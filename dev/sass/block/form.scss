@@ -10,6 +10,11 @@
     background: transparent;
     padding: 0 15px;
     outline: none;
+    transition: background-color .25s ease-in-out;
+
+    &:invalid {
+      background: rgba(255, 0, 0, 0.1);
+    }
   }
 
   &__checkbox {
@@ -34,6 +39,8 @@
         background-size: 70%;
         flex-shrink: 0;
         margin-right: 10px;
+        background-color: transparent;
+        transition: background-color .25s ease-in-out;
       }
 
       a {
@@ -52,9 +59,24 @@
         background-image: url(../img/ico-checkbox.svg);
       }
     }
+
+    &:invalid + label {
+
+      &:before {
+        background-color: rgba(255, 0, 0, 0.1);
+      }
+    }
   }
 
   &__btn {
     padding: 0 35px;
+  }
+
+  &__response {
+    color: red;
+
+    &--success {
+      color: green;
+    }
   }
 }

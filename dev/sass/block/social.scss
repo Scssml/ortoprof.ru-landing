@@ -23,4 +23,8 @@
       color: #E35191;
     }
   }
+
+  @media (max-width: 575px) {
+    justify-content: center;
+  }
 }

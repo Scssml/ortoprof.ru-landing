@@ -170,7 +170,7 @@ gulp.task('serve', function() {
     server: {
       baseDir: 'dist'
     },
-    host: '192.168.1.45'
+    host: '192.168.1.22'
   });
 
   browserSync.watch('dist/**/*.*').on('change', browserSync.reload);

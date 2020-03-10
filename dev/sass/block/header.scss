@@ -6,6 +6,13 @@
   padding: 19px 0;
   background: rgba(255, 255, 255, 0.7);
   z-index: 5;
+  transition: background-color .25s ease-in-out, box-shadow .25s ease-in-out .1s;
+
+  &--scroll {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    transition: background-color .25s ease-in-out .1s, box-shadow .25s ease-in-out;
+  }
 
   &__logo {
     border-right: 2px solid #E35191;

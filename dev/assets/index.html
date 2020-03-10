@@ -16,7 +16,7 @@
             <div class="row align-items-center">
               <div class="col-auto pr-0">
                 <div class="header__logo">
-                  <a href="/"><img src="img/logo.png" alt="logo"></a>
+                  <a href="/smile/"><img src="img/logo.png" alt="logo"></a>
                   <span>стоматологическая клиника</span>
                 </div>
               </div>
@@ -44,11 +44,11 @@
       <div class="container">
         <div class="banner__content">
           <div class="row text-center justify-content-between">
-            <div class="col-lg-auto col-xl-4">
-              Брекет-система
+            <div class="col-md-auto col-xl-4">
+              Брекет-система <span class="d-inline d-md-none">и <br class="d-block d-sm-none"> 3D Smile</span>
               <br><a href="#callback" class="btn px-4 fancybox">ЗАПИСАТЬСЯ НА ПРИЕМ</a>
             </div>
-            <div class="col-lg-auto col-xl-4">
+            <div class="col-md-auto col-xl-4 d-none d-md-block">
               3D Smile
               <br><a href="#callback" class="btn px-4 fancybox">ЗАПИСАТЬСЯ НА ПРИЕМ</a>
             </div>
@@ -58,7 +58,7 @@
               <img src="img/ico-sale.svg" alt="banner">
             </div>
             <div class="sticker-block__text">
-              Рассрочка платежа до 12 месяцев!
+              Рассрочка платежа <br class="d-block d-sm-none"> до 12 месяцев!
             </div>
           </div>
         </div>
@@ -187,7 +187,6 @@
           <img src="img/pic-1.jpg" alt="pic">
           <img src="img/pic-2.jpg" alt="pic">
           <img src="img/pic-3.jpg" alt="pic">
-          <img src="img/pic-2.jpg" alt="pic">
       </div>
     </section>
 
@@ -204,7 +203,8 @@
               </div>
             </div>
             <div class="col-lg">
-              <form class="form-block__form form">
+              <form class="form-block__form form form-ajax" action="sendmail.php" method="post" id="main-form">
+                <p class="form__response d-none"></p>
                 <div class="row align-items-center">
                   <div class="col-12 mb-4">
                     <label for="fields[name]">Ваше имя</label>
@@ -215,9 +215,9 @@
                     <input type="tel" class="form__input" name="fields[phone]" id="fields[phone]" placeholder="+7 (___) ___-__-__" required>
                   </div>
                   <div class="col-md-7 col-lg pr-lg-2 mb-4 mb-md-0">
-                    <input type="checkbox" class="form__checkbox" name="fields[consent]" id="fields[consent]">
+                    <input type="checkbox" class="form__checkbox" name="fields[consent]" value="Y" id="fields[consent]" checked required>
                     <label for="fields[consent]">
-                      <span>Принимаю условия <a href="#">пользовательского соглашения</a></span>
+                      <span>Принимаю условия <a href="#userconsent" class="fancybox">пользовательского соглашения</a></span>
                     </label>
                   </div>
                   <div class="col-md-5 col-lg-auto pl-lg-0 text-center text-md-right">
@@ -245,34 +245,39 @@
             <div class="dropdown-block">
               <a href="#" class="dropdown-block__link">Сколько стоит?</a>
               <div class="dropdown-block__text">
-                Оптимальный возраст - 12 лет. Однако, по показаниям иногда ортодонтическое лечение начинают и раньше.
-                Оптимальный возраст - 12 лет. Однако, по показаниям иногда ортодонтическое лечение начинают и раньше.
-                Оптимальный возраст - 12 лет. Однако, по показаниям иногда ортодонтическое лечение начинают и раньше.
-                Оптимальный возраст - 12 лет. Однако, по показаниям иногда ортодонтическое лечение начинают и раньше.
+                Фиксация брекет – системы на обе челюсти стоит от 50000 рублей (включая материалы). Диагностика, дальнейшее наблюдение, дополнительные приспособления (при необходимости), снятие и ретенционные аппараты оплачиваются отдельно. Поэтому стоимость лечения варьирует в зависимости  от случая. 
               </div>
             </div>
             <div class="dropdown-block">
-              <a href="#" class="dropdown-block__link">В каком возрасте ставить?</a>
+              <a href="#" class="dropdown-block__link">В каком возрасте можно ставить брекеты?</a>
               <div class="dropdown-block__text">
-                Оптимальный возраст - 12 лет. Однако, по показаниям иногда ортодонтическое лечение начинают и раньше.
+                Оптимальный возраст - 12 лет. Однако, по показаниям, иногда ортодонтическое лечение начинают и раньше. Во взрослом возрасте ортодонтическая коррекция прикуса тоже возможна.
               </div>
             </div>
             <div class="dropdown-block">
               <a href="#" class="dropdown-block__link">Какая нужна подготовка перед исправлением прикуса?</a>
               <div class="dropdown-block__text">
-                Оптимальный возраст - 12 лет. Однако, по показаниям иногда ортодонтическое лечение начинают и раньше.
+                Перед ортодонтическим лечением первым делом проводится  диагностика и составление плана лечения, чтобы  определить будет ли необходимо удаление каких- либо зубов по ортодонтическим показаниям. После этого необходимо провести санацию ротовой полости и профессиональную гигиену полости рта.
               </div>
             </div>
             <div class="dropdown-block">
               <a href="#" class="dropdown-block__link">Какие бывают брекеты?</a>
               <div class="dropdown-block__text">
-                Оптимальный возраст - 12 лет. Однако, по показаниям иногда ортодонтическое лечение начинают и раньше.
+                Брекеты бывают разных видов: 
+                <ul class="mb-0">
+                  <li>вестибулярные (крепятся на внешней поверхности зубов);</li>
+                  <li>металлические (лигатурные и самолигирующиеся);</li>
+                  <li>керамические (лигатурные и самолигирующиеся);</li>
+                  <li>сапфировые (прозрачные);</li>
+                  <li>лингвальные (крепятся на зубы изнутри);</li>
+                </ul>
+                Альтернативой лингвальным и эстетическим брекетам  являются  элайнеры – система индивидуальных прозрачных кап, например, 3D-Smile.
               </div>
             </div>
             <div class="dropdown-block">
               <a href="#" class="dropdown-block__link">Как долго надо ходить в брекетах?</a>
               <div class="dropdown-block__text">
-                Оптимальный возраст - 12 лет. Однако, по показаниям иногда ортодонтическое лечение начинают и раньше.
+                Срок лечения зависит от многих факторов.  В зависимости от степени сложности аномалии в различных случаях может потребоваться от года до двух – трёх лет, а также двухэтапная коррекция.
               </div>
             </div>
             <p>Есть противопоказания. Посоветуйтесь с врачом. Наши специалисты будут рады ответить на все ваши вопросы по телефону.</p>
@@ -283,7 +288,7 @@
 
     <section class="position-relative">
       <div class="map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6c5c8e220012ed4e3ce5899450482f54a13039c0b12876afb7d540dea3acaed1&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6c5c8e220012ed4e3ce5899450482f54a13039c0b12876afb7d540dea3acaed1&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=false"></script>
       </div>
 
       <div class="container">
@@ -333,17 +338,18 @@
     <footer class="footer">
       <div class="container">
         <div class="row align-items-center justify-content-between">
-          <div class="col-sm-auto">
-            <img src="img/logo-white.png" alt="logo" class="mb-3 d-block d-lg-none">
+          <div class="col-sm-auto text-center">
+            <img src="img/logo-white.png" alt="logo" class="mb-3 d-inline-block d-lg-none">
+            <br class="d-block d-lg-none">
             <img src="img/prodoctorov.png" alt="prodoctorov">
           </div>
-          <div class="col-sm-auto col-lg-4 text-right">
+          <div class="col-sm-auto col-lg-4 text-center text-sm-right mt-3 mt-sm-0">
             <p>г. Самара, ул. Ленинская 206</p>
             <p><a href="tel:+78462427171" class="footer__phone">8 (846) 242-71-71</a></p>
             <div class="social">
-              <a href="#" target="_blank" class="social__link socicon-vkontakte"></a>
-              <a href="#" target="_blank" class="social__link socicon-instagram"></a>
-              <a href="#" target="_blank" class="social__link socicon-odnoklassniki"></a>
+              <a href="https://vk.com/ortoprof63" target="_blank" class="social__link socicon-vkontakte"></a>
+              <a href="https://www.instagram.com/ortoprof_smr/" target="_blank" class="social__link socicon-instagram"></a>
+              <a href="https://ok.ru/group/56104749039733" target="_blank" class="social__link socicon-odnoklassniki"></a>
             </div>
           </div>
           <div class="col-lg-auto order-lg-first text-center text-lg-left mt-3 mt-lg-0">
@@ -358,7 +364,8 @@
     <div class="d-none">
       <div id="callback">
         <div class="popup">
-          <form class="form">
+          <form class="form form-ajax" action="sendmail.php" method="post" id="popup-form">
+            <p class="form__response d-none"></p>
             <div class="row align-items-center">
               <div class="col-12 mb-3">
                 <label for="fields[name]">Ваше имя</label>
@@ -369,9 +376,9 @@
                 <input type="tel" class="form__input" name="fields[phone]" id="fields[phone]" placeholder="+7 (___) ___-__-__" required>
               </div>
               <div class="col-12 mb-3">
-                <input type="checkbox" class="form__checkbox" name="fields[consent]" id="fields[consent]">
+                <input type="checkbox" class="form__checkbox" name="fields[consent]" value="Y" id="fields[consent]" checked required>
                 <label for="fields[consent]">
-                  <span>Принимаю условия <a href="#">пользовательского соглашения</a></span>
+                  <span>Принимаю условия <a href="#userconsent" class="fancybox">пользовательского соглашения</a></span>
                 </label>
               </div>
               <div class="col-lg-12 text-center">
@@ -379,6 +386,89 @@
               </div>
             </div>
           </form>
+        </div>
+      </div>
+
+      <div id="userconsent">
+        <div class="container">
+          <h2 class="heading text-center mb-3">Пользовательское соглашение</h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <p><b>1. Общие положения</b></p>
+              <p>1.1. Настоящий документ «Пользовательское соглашение» регулирует отношения, возникающие между ООО "Ортопроф" (далее – Исполнитель), являющимся правообладателем Сайта в интернете, и Заказчиком.</p>
+              
+              <p>1.2. Исполнитель размещает на Сайте информацию о предлагаемых услугах и иную информацию, связанную с деятельностью Исполнителя. Информация об услугах, размещенная на Сайте, действительна до внесения в нее изменений Исполнителем, если иное не указано дополнительно. Внесение изменений в сведения об оказании Услуг, размещенные на Сайте, производится в одностороннем порядке без уведомления Пользователя.</p>
+              
+              <p>1.3. Пользователь обязуется полностью ознакомиться с настоящим Соглашением до момента отправления Заявки. Оформление Заявки означает полное и безоговорочное принятие Заказчиком положений настоящего Соглашения.</p>
+              
+              <p>1.4. Отправляя Заявку в установленном порядке, Заказчик полностью и безоговорочно соглашается с настоящим Соглашением.</p>
+              
+              <p><b>2. Используемые термины</b></p>
+              <p>2.1. Посетитель – лицо, пришедшее на Сайт без цели разместить Заявку.</p>
+              
+              <p>2.2. Пользователь – посетитель Сайта, желающий разместить Заявку на Сайте и принимающий условия настоящего Соглашения.</p>
+              
+              <p>2.3. Соглашение – настоящий документ со всеми дополнениями и изменениями.</p>
+              
+              <p>2.4. Заказчик – посетитель Сайта, разместивший Заявку на Сайте.</p>
+              
+              <p>2.5. Заявка – должным образом заполненный запрос на оказание выбранных на Сайте Услуг с указанием данных Заказчика.</p>
+              
+              <p>2.6. Услуги – информационные услуги, оказываемые Исполнителем и доступные для Заявки на Сайте.</p>
+              
+              <p>2.7. Исполнитель – юридическое лицо, информация об услугах которого размещена на Сайте. Сведения об Исполнителе: ООО "Ортопроф" (ИНН 6312080323, , юридический адрес: 443122, Самарская область, город Самара, Московское шоссе, 302/2 литер ш).</p>
+              
+              <p>2.8. Сайт – ресурс ortoprof.ru, расположенный по адресу http://ortoprof.ru/, на котором расположена информация об Услугах, созданный и действующий с целью предоставить Посетителям, Пользователям и Заказчикам информацию о предоставляемых Исполнителем услугах, обработать заявку Заказчиков для последующего предложения услуг.</p>
+              
+              <p><b>3. Защита персональной информации</b></p>
+              <p>3.1. Предоставляя свои персональные данные при отправке Заявки, Заказчик дает Исполнителю свое согласие на обработку и использование своих персональных данных согласно ФЗ №152-ФЗ «О персональных данных» от 27.07.2006 г. в целях, указанных в настоящем Соглашении.</p>
+              
+              <p class="mb-0">3.2. Персональные данные, которые собирает Исполнитель:</p>
+              <ul>
+                <li>имя;</li>
+                <li>доменное имя Сайта;</li>
+                <li>адрес ящика электронной почты;</li>
+                <li>номер мобильного телефона;</li>
+                <li>предполагаемый бюджет Заказчика на Услуги;</li>
+                <li>дополнительная информация о компании Заказчика в вольной форме изложения.</li>
+              </ul>
+
+              <p class="mb-0">3.3. Исполнитель использует персональные данные в целях:</p>
+              <ul>
+                <li>оформления Заказчиком Заявки на Сайте;</li>
+                <li>обратной связи с Заказчиком.</li>
+              </ul>
+              
+              <p>3.4. Исполнитель обязуется не разглашать полученную от Заказчика информацию, в Заявке или иным способом. Не считается нарушением настоящего Соглашения и обязательств Исполнителя разглашение информации Заказчика, когда обязанность такого разглашения обусловлено требованиями действующего законодательства Российской Федерации.</p>
+              
+              <p><b>4. Заключительные положения</b></p>
+              <p>4.1. Исполнитель оставляет за собой право вносить изменения в настоящее Соглашения в одностороннем порядке без уведомления Заказчика. Внесенные в Соглашение изменения вступают в силу в момент их публикации на Сайте.</p>
+            </div>
+            <div class="col-lg-6">
+              <p><b>Расшифровка</b></p>
+              <p>На нашем сайте есть информация об услугах: описание процессов, планы работ, кейсы, цены.</p>
+
+              <p>Эта информация может обновляться, поэтому перед отправкой заявки еще раз перечитайте описание услуги.</p>
+
+              <p>Если возникли вопросы – позвоните или напишите нам. Менеджер поможет разобраться в процессах, терминах и результате работы.</p>
+
+              <p><b>Отправление заявки</b></p>
+              <p>Отправляя заявку на консультацию или заказ услуги, вы соглашаетесь с тем, что мы будем использовать ваши данные.</p>
+
+              <p>Данные из заявки мы используем для того, чтобы связаться с вами, предложить услуги или помочь решить вопрос.</p>
+
+              <p>Вы можете оставить только данные для связи. Тогда мы обсудим детали по телефону, переписке или при личной встрече.</p>
+
+              <p><b>Вся информация из заявки конфиденциальна</b></p>
+              <p>Мы не передаем ее банкам, коллекторам, телемаркетологам и инфобизнесменам.</p>
+
+              <p>Но если ваши данные нужно будет раскрыть по закону, нам придется это сделать.</p>
+
+              <p>Мы не ведем спамных рассылок.</p>
+
+              <p>Единственное, что придет вам на почту, это письмо от консультанта. Если не ответите на первое письмо, придет второе. Не ответите на второе, консультант расстроится, замкнется и перестанет вам писать.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

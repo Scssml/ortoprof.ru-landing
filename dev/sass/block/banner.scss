@@ -3,6 +3,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 
   &__content {
     position: relative;
@@ -10,9 +11,25 @@
     padding-top: 160px;
     font-weight: bold;
     font-size: 40px;
+    z-index: 1;
 
     @media (max-width: 1199px) {
       font-size: 34px;
+    }
+
+    @media (max-width: 991px) {
+      padding-top: 110px;
+      height: 532px;
+    }
+
+    @media (max-width: 767px) {
+      padding-top: 120px;
+      font-size: 25px;
+    }
+
+    @media (max-width: 575px) {
+      padding-top: 110px;
+      height: 560px;
     }
   }
 
@@ -21,5 +38,40 @@
     bottom: 30px;
     right: 0;
     width: 220px;
+
+    @media (max-width: 991px) {
+      bottom: -80px;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &:after {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(90deg, #f9fbfa 50%, #fbe4c5 50%);
+
+    @media (max-width: 991px) {
+      display: block;
+    }
+
+    @media (max-width: 575px) {
+      height: 240px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    background-position: 50% 200px;
+    background-size: auto calc(100% - 200px);
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 575px) {
+    background-position: 50% 240px;
   }
 }

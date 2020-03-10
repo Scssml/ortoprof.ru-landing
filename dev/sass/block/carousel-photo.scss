@@ -30,5 +30,31 @@
         background-image: url(../img/ico-arrow-right.svg);
       }
     }
+
+    .owl-dots {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .owl-dot {
+        width: 14px;
+        height: 14px;
+        border: 1px solid #e35191;
+        border-radius: 50%;
+        margin: 0 2px;
+
+        &.active {
+          background-color: #e35191;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 575px) {
+    padding-bottom: 25px;
   }
 }

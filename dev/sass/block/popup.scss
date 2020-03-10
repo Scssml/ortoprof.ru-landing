@@ -1,3 +1,10 @@
 .popup {
   max-width: 280px;
 }
+
+.fancybox-content {
+
+  @media (max-width: 575px) {
+    padding: 44px 15px;
+  }
+}

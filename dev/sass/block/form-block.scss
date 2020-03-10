@@ -18,6 +18,20 @@
 
   &__form {
     padding: 42px 0;
+    position: relative;
+
+    .form__response {
+      position: absolute;
+      top: 15px;
+      left: 0;
+      width: 100%;
+      margin: 0;
+
+      @media (max-width: 991px) {
+        position: static;
+        margin-bottom: 1rem;
+      }
+    }
 
     @media (max-width: 1199px) {
       padding-right: 30px;

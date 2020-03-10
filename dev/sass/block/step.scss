@@ -21,6 +21,11 @@
       height: 16px;
       top: calc(50% - 8px);
       right: -130px;
+
+      @media (max-width: 575px) {
+        width: 70px;
+        right: -80px;
+      }
     }
 
     &--no-arrow {
@@ -47,5 +52,9 @@
 
   &--small {
     width: 136px;
+  }
+
+  @media (max-width: 575px) {
+    width: 170px;
   }
 }
